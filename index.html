@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson11</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Welcome to my first ToDoList</h1>
+		<p>After creating and deleting tasks, the final list of tasks will be saved in the browser storage </p>
+		<p class="p2">You also can add tasks by pressing the Enter key</p>
+	</div>
+	<div class="container">
+		<div class="wrap">
+			<ol class="todo-list">
+				
+			</ol>
+			<div class="rightpart">
+
+				<button class="switch-theme-btn" type="button">Меняем тему</button>
+
+				<div class="add-form">
+					<input class="todo-input"
+						type="text"
+						value="enter task"
+						onfocus='if (this.value=="enter task") this.value=""'
+						onblur='if (this.value=="") this.value="enter task"'>
+					<button class="add-task-btn" type="button">Add new task</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="assets/js/app.js"></script>
+</body>
+</html>

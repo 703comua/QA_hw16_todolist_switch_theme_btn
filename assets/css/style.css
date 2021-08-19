@@ -1,0 +1,139 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body.theme-dark {
+	background-color: black;
+}
+body.theme-dark h1{
+	color: white;
+}
+body.theme-dark .todo-list {
+	background: #23ef20;
+}
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+h1 {
+	margin: 30px 0;
+}
+p {
+	margin-bottom: 30px;
+	line-height: 19px;
+	font-size: 18px;
+	background: coral;
+	color: white;
+	border-radius: 20px;
+	padding: 5px 20px;
+	text-align: center;
+}
+p.p2 {
+	background: crimson;
+}
+.wrap {
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.todo-list {
+	margin-right: 60px;
+	background: aliceblue;
+	padding: 30px 60px;
+	border-radius: 20px;
+	font-size: 30px;
+	flex: 1;
+}
+.todo-list li {
+	display: flex;
+	align-items: center;
+	margin: 5px 0;
+}
+.switch-theme-btn{
+	padding: 5px 20px;
+	margin-bottom: 30px;
+}
+.add-form {
+	display: flex;
+}
+input, button {
+	padding: 10px;
+	font-size: 16px;
+	border-radius: 20px;
+	border: 1px solid #ccc;
+	cursor: pointer;
+}
+input {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	padding-left: 20px;
+}
+input:focus {
+	outline: none;
+}
+input:hover {
+	border-color: gray;
+}
+button.add-task-btn {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	margin-left: -2px;
+	background: linear-gradient(to right, #ff7396, #f97af0);
+	/* background: #5d8ec7; */
+	transition: .3s ease-in-out;
+	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+	min-width: 150px;
+}
+button.add-task-btn:hover {
+	box-shadow: 0 15px 69px rgb(0 0 0 / 21%);
+}
+
+
+.del{
+	display: inline-block;
+	margin-right: 20px;
+    width:40px;
+	min-width: 40px;
+    height:40px;
+    background-color:red;
+    position:relative;
+    border-radius:6px;
+    box-shadow:2px 2px 4px 0 white;
+	cursor: pointer;
+}
+.del:hover {
+    background-color:green;
+}
+
+.del:before, .del:after{
+    content:'';
+    position:absolute;
+    width:36px;
+    height:4px;
+    background-color:white;
+    border-radius:2px;
+    top:18px;
+    box-shadow:0 0 2px 0 #ccc;
+}
+
+.del:before{
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    transform:rotate(45deg);
+    left:2px;
+}
+.del:after{
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+    right:2px;
+}
+.linethrough {
+	text-decoration: line-through;
+}
+.todo-text {
+	cursor: pointer;
+}

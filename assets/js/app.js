@@ -59,14 +59,18 @@ function removeFromLocalStorage(target) {
 input.addEventListener("keypress", (keyPressed) => {
 	const keyEnter = 13;
 	if (keyPressed.which == keyEnter) {
-		// create task
-		createTodo();
-		
-		// add to localStorage
-		addToLocalStorage(input.value)
-		
-		// clear input
-		input.value = "";
+		if(input.value == '' || input.value == 'enter task'){
+			alert('Заполните поле!');
+		} else {
+			// create task
+			createTodo();
+			
+			// add to localStorage
+			addToLocalStorage(input.value)
+			
+			// clear input
+			input.value = "";
+		}
 	}
 });
 
